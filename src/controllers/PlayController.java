@@ -11,6 +11,10 @@ public class PlayController {
     Label letter;
     @FXML TextField word;
 
+    String choice;
 
+    public void setChoice(String choice){
+        this.choice = choice;
+    }
 
 }
