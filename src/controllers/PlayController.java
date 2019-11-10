@@ -6,17 +6,15 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
 public class PlayController implements Initializable {
-    @FXML
-    Label guesedLetters;
-    @FXML
-    Label letter;
+
+    @FXML Label guesedLetters;
+    @FXML TextField letter;
     @FXML TextField word;
     @FXML
     ImageView firstImage;
@@ -67,7 +65,6 @@ public class PlayController implements Initializable {
         imageView.setImage(image);
         imageView.setVisible(true);
     }
-
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
