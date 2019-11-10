@@ -17,8 +17,8 @@
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <TextField fx:id="word" prefHeight="46.0" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <TextField fx:id="letter" prefHeight="26.0" prefWidth="84.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <Label fx:id="guesedLetters" text="Label" GridPane.columnIndex="1" />
+      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
    </children>
 </GridPane>

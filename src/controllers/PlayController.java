@@ -8,11 +8,9 @@ public class PlayController {
     @FXML
     Label guesedLetters;
     @FXML
-    TextField letter;
+    Label letter;
     @FXML TextField word;
 
 
-    public void setGuesedLetters(){
-        this.guesedLetters.setText();
-    }
+
 }
