@@ -42,10 +42,10 @@
            <Image url="@../images/elf.png" />
       </ImageView>
       <ImageView fitHeight="244.0" fitWidth="157.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2">
-         <Image url="@../images/snesko1.jpeg" />
+         <Image url="@../images/snesko.png" />
       </ImageView>
       <ImageView fitHeight="159.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2">
-        <Image url="@../images/irvas1.jpeg" />
+        <Image url="@../images/irvas1.png" />
       </ImageView>
    </children>
 </GridPane>
