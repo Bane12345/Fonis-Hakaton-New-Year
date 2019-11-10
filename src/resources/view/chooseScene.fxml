@@ -8,9 +8,8 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane maxHeight="-Infinity" fx:controller="controllers.ChooseController" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
    <columnConstraints>
-      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -26,30 +25,29 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
    </rowConstraints>
    <children>
-      <Button fx:id = "santa" mnemonicParsing="false" text="Santa Clause" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-      <Button fx:id = "elf" mnemonicParsing="false" text="Elf" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-      <Button fx:id = "snowman" mnemonicParsing="false" text="Snowman" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-      <Button fx:id = "reindeer" mnemonicParsing="false" text="Reindeer" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-      <Button mnemonicParsing="false" text="Log out" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+      <Button fx:id="santa" onAction="#levelChosen" mnemonicParsing="false" text="Santa Clause" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+      <Button fx:id="elf" onAction="#levelChosen" mnemonicParsing="false" text="Elf" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+      <Button fx:id="snowman" onAction="#levelChosen" mnemonicParsing="false" text="Snowman" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+      <Button fx:id="reindeer" onAction="#levelChosen" mnemonicParsing="false" text="Reindeer" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
       <Label text="SantaClause" GridPane.halignment="CENTER" />
       <Label text="Elf" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
       <Label text="Snowman" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
       <Label text="Reindeer" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
-      <Label text="Easy" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+      <Label text="Easy" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
       <Label text="Medium" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
       <Label text="Hard" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
       <Label text="Expert" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-      <ImageView fitHeight="219.0" fitWidth="181.0" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2">
-         <Image url="@../images/dedamraz.png" />
+      <ImageView fitHeight="219.0" fitWidth="181.0" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2">
+         <Image url="@../images/dedamraz0.png" />
       </ImageView>
-      <ImageView fitHeight="173.0" fitWidth="193.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2">
-           <Image url="@../images/dedamraz.png" />
+      <ImageView fitHeight="157.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2">
+           <Image url="@../images/elf.png" />
       </ImageView>
-      <ImageView fitHeight="178.0" fitWidth="197.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2">
-         <Image url="@../images/dedamraz.png" />
+      <ImageView fitHeight="166.0" fitWidth="177.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2">
+         <Image url="@../images/snesko.png" />
       </ImageView>
-      <ImageView fitHeight="172.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2">
-        <Image url="@../images/dedamraz.png" />
+      <ImageView fitHeight="123.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2">
+        <Image url="@../images/irvas.png" />
       </ImageView>
    </children>
 </GridPane>

@@ -2,11 +2,14 @@
 
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.172-ea">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -15,10 +18,39 @@
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
       <TextField fx:id="letter" prefHeight="26.0" prefWidth="84.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Label fx:id="guesedLetters" text="Label" GridPane.columnIndex="1" />
-      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label fx:id="guesedLetters" text="Label" textFill="WHITE" GridPane.columnIndex="1" />
+      <Label text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <AnchorPane GridPane.rowIndex="1" GridPane.rowSpan="3">
+         <children>
+            <ImageView fx:id="hangtool" fitHeight="388.0" fitWidth="261.0" layoutX="14.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../images/hangman.png" />
+            </ImageView>
+            <ImageView visible="false" fx:id = "firstImage" fitHeight="300.0" fitWidth="400.0" layoutX="42.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../images/dedamraz5.png" />
+            </ImageView>
+             <ImageView visible="false" fx:id = "secondImage" fitHeight="300.0" fitWidth="400.0" layoutX="42.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                 <Image url="@../images/dedamraz4.png" />
+             </ImageView>
+             <ImageView visible="false" fx:id = "thirdImage" fitHeight="300.0" fitWidth="400.0" layoutX="42.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                 <Image url="@../images/dedamraz3.png" />
+             </ImageView>
+             <ImageView visible="false" fx:id = "fourthImage" fitHeight="300.0" fitWidth="400.0" layoutX="42.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                 <Image url="@../images/dedamraz2.png" />
+             </ImageView>
+             <ImageView visible="false" fx:id = "fifthImage" fitHeight="300.0" fitWidth="400.0" layoutX="42.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                 <Image url="@../images/dedamraz1.png" />
+             </ImageView>
+             <ImageView visible="false" fx:id = "sixthImage" fitHeight="300.0" fitWidth="400.0" layoutX="42.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                 <Image url="@../images/dedamraz0.png" />
+             </ImageView>
+             <ImageView visible="false" fx:id = "seventhImage" fitHeight="300.0" fitWidth="400.0" layoutX="42.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                 <Image url="@../images/dedamraz0.png" />
+             </ImageView>
+         </children>
+      </AnchorPane>
    </children>
 </GridPane>
