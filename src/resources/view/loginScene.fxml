@@ -2,13 +2,14 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane fx:controller="controllers.LoginController" hgap="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="653.0" stylesheets="@../style/style.css" vgap="4.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane hgap="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="653.0" stylesheets="@../style/style.css" vgap="4.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
    <columnConstraints>
       <ColumnConstraints prefWidth="160.0" />
       <ColumnConstraints minWidth="10.0" prefWidth="160.0" />
@@ -34,17 +35,19 @@
             <Font name="Berlin Sans FB Demi Bold" size="24.0" />
          </font>
       </Label>
-      <TextField GridPane.rowIndex="5" />
-      <TextField GridPane.rowIndex="7" />
-      <Label text="Label:" textFill="WHITE" GridPane.rowIndex="6">
+      <TextField fx:id="username" GridPane.rowIndex="5" />
+      <PasswordField fx:id="password" GridPane.rowIndex="7" />
+      <Label text="Password:" textFill="WHITE" GridPane.rowIndex="6">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="24.0" />
          </font>
       </Label>
-      <Button mnemonicParsing="false" text="Start game" textFill="WHITE" GridPane.rowIndex="8" onAction="#changeScene2">
+      <Button mnemonicParsing="false" onAction="#changeScene2" text="Start game" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="8">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="24.0" />
          </font>
       </Button>
+      <Button mnemonicParsing="false" onAction="#uloguj" prefHeight="25.0" prefWidth="62.0" text="Log in" GridPane.rowIndex="8" />
+      <Button mnemonicParsing="false" onAction="#registruj" text=" Register" GridPane.rowIndex="9" />
    </children>
 </GridPane>
